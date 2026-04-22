@@ -22,8 +22,8 @@
     if (!formData.fullName) {
       app.showFieldError('register-name', 'Full Name là bắt buộc');
       isValid = false;
-    } else if (formData.fullName.length < 2 || formData.fullName.length > 50) {
-      app.showFieldError('register-name', 'Full Name phải dài từ 2 đến 50 ký tự');
+    } else if (formData.fullName.length < 2 || formData.fullName.length > 20) {
+      app.showFieldError('register-name', 'Full Name phải dài từ 2 đến 20 ký tự');
       isValid = false;
     } else if (containsDigit(formData.fullName)) {
       app.showFieldError('register-name', 'Full Name không được chứa số');
@@ -33,8 +33,8 @@
     if (!formData.email) {
       app.showFieldError('register-email', 'Email là bắt buộc');
       isValid = false;
-    } else if (formData.email.length > 50) {
-      app.showFieldError('register-email', 'Email tối đa 50 ký tự');
+    } else if (formData.email.length > 30) {
+      app.showFieldError('register-email', 'Email tối đa 30 ký tự');
       isValid = false;
     } else if (!isValidEmail(formData.email)) {
       app.showFieldError('register-email', 'Email không đúng định dạng');

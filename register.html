@@ -45,29 +45,22 @@
             <div class="row g-0">
               <div class="col-lg-5 auth-aside register-aside">
                 <span class="section-tag">Library Member</span>
-                <h1>Tạo tài khoản để mượn sách và theo dõi lịch sử đọc.</h1>
-                <p>Biểu mẫu được giữ đơn giản, rõ ràng để dễ test validation và dùng lại cho các flow quản lý thư viện.</p>
-                <ul class="auth-list">
-                  <li>Email không được trùng trong hệ thống</li>
-                  <li>Họ tên không chứa số</li>
-                  <li>Đăng ký xong sẽ chuyển về trang Login</li>
-                </ul>
               </div>
               <div class="col-lg-7">
                 <form class="auth-form" novalidate>
                   <div class="mb-3">
                     <label class="form-label" for="register-name">Full Name</label>
-                    <input type="text" class="form-control" id="register-name" maxlength="50" placeholder="Nguyen Van A">
+                    <input type="text" class="form-control" id="register-name" maxlength="40" placeholder="Nguyen Van A">
                     <div class="field-error" id="register-name-error"></div>
                   </div>
                   <div class="mb-3">
                     <label class="form-label" for="register-email">Email</label>
-                    <input type="email" class="form-control" id="register-email" maxlength="50" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="register-email" maxlength="40" placeholder="name@example.com">
                     <div class="field-error" id="register-email-error"></div>
                   </div>
                   <div class="mb-3">
                     <label class="form-label" for="register-password">Password</label>
-                    <input type="password" class="form-control" id="register-password" maxlength="20" placeholder="Từ 6 đến 20 ký tự">
+                   <input type="password" class="form-control" id="register-password" placeholder="Từ 6 đến 20 ký tự">
                     <div class="field-error" id="register-password-error"></div>
                   </div>
                   <div class="mb-3">
