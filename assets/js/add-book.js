@@ -21,16 +21,16 @@
     if (!bookData.title) {
       app.showFieldError('book-title', 'Book Title là bắt buộc');
       isValid = false;
-    } else if (bookData.title.length < 2 || bookData.title.length > 100) {
-      app.showFieldError('book-title', 'Book Title phải dài từ 2 đến 100 ký tự');
+    } else if (bookData.title.length < 2 || bookData.title.length > 20) {
+      app.showFieldError('book-title', 'Book Title phải dài từ 2 đến 20 ký tự');
       isValid = false;
     }
 
     if (!bookData.author) {
       app.showFieldError('book-author', 'Author là bắt buộc');
       isValid = false;
-    } else if (bookData.author.length < 2 || bookData.author.length > 50) {
-      app.showFieldError('book-author', 'Author phải dài từ 2 đến 50 ký tự');
+    } else if (bookData.author.length < 2 || bookData.author.length > 20) {
+      app.showFieldError('book-author', 'Author phải dài từ 2 đến 20 ký tự');
       isValid = false;
     }
 
@@ -69,8 +69,8 @@
       isValid = false;
     }
 
-    if (bookData.description.length > 500) {
-      app.showFieldError('book-description', 'Description tối đa 500 ký tự');
+    if (bookData.description.length > 10) {
+      app.showFieldError('book-description', 'Description tối đa 10 ký tự');
       isValid = false;
     }
 
