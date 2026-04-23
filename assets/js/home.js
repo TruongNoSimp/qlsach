@@ -243,7 +243,7 @@
 
     error.textContent = '';
 
-    if (keyword.length > 100) {
+    if (keyword.length >100) {
       error.textContent = 'Từ khóa tối đa 100 ký tự';
       return;
     }

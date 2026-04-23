@@ -17,8 +17,8 @@
     if (!email) {
       app.showFieldError('login-email', 'Email là bắt buộc');
       isValid = false;
-    } else if (email.length > 50) {
-      app.showFieldError('login-email', 'Email tối đa 50 ký tự');
+    } else if (email.length > 30) {
+      app.showFieldError('login-email', 'Email tối đa 30 ký tự');
       isValid = false;
     } else if (!isValidEmail(email)) {
       app.showFieldError('login-email', 'Email không đúng định dạng');
